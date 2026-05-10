@@ -1,6 +1,6 @@
 /* ===============================
-   PALETA DE CORES
-==================================*/
+  PALETA DE CORES
+  ==================================*/
 
 :root {
     /* Cores principais */
@@ -32,7 +32,11 @@
     --border-light: #F3F4F6;
     /* Sombras */
     --shadow: rgba(0, 0, 0, 0.08);
+
+    /* Status */
+    --info: #3B82F6;
 }
+
 
 /*===============================
             RESET
@@ -261,6 +265,7 @@ input:hover {
         background-color: var(--primary);
         padding: 1rem 2rem;
         border-radius: 8px;
+        cursor: pointer;
         border: none;
         color: var(--primary-light);
         font-size: 16px;
@@ -332,5 +337,116 @@ input:hover {
         right: 2rem;
         width: 16rem;
         margin-left: 30rem;
+    }
+}
+
+/*===============================
+      HERO SECTION 2
+=================================*/
+.hero-section2 {
+    margin: 1rem 3rem;
+
+    .category-hero {
+        width: 100%rem;
+        display: flex;
+        gap: 1rem;
+
+        .category-card {
+            color: var(--text-primary);
+            width: 9rem;
+            height: 6rem;
+            cursor: pointer;
+            font-size: .96rem;
+            border: 1px solid var(--border);
+            text-align: center;
+            align-content: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 168px, 107px, 0.08);
+            transition: 0.3s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-8px) scale(1.05);
+        }
+
+        .category-card:nth-child(8) {
+            color: var(--primary)
+        }
+    }
+
+    .hero-promotions {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+
+        .promotions-cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 2rem;
+            cursor: pointer;
+            padding-left: 2rem;
+            width: 25rem;
+            height: 12rem;
+            position: relative;
+            border-radius: 16px;
+            background-color: var(--primary-light);
+            transition: 0.3s ease;
+        }
+
+        .promotions-cards:hover {
+            transform: translateY(-8px) scale(1.05);
+        }
+
+        .promotions-cards:nth-child(1) {
+            color: var(--primary);
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+            svg {
+                position: absolute;
+                bottom: 37px;
+            }
+        }
+
+        .promotions-cards:nth-child(2) {
+            color: var(--info);
+
+            h4 {
+                line-height: 1.5rem;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+            svg {
+                position: absolute;
+                bottom: 29px;
+            }
+        }
+    }
+
+    .promotions-cards:nth-child(3) {
+        h3 {
+            margin-top: 3rem;
+            line-height: 1.5rem;
+        }
+
+        p {
+            color: var(--primary);
+            margin-top: .5rem;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        svg {
+            position: absolute;
+            bottom: 33px;
+        }
     }
 }
