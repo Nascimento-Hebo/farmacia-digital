@@ -1,3 +1,4 @@
+
 /*listagem 
 Caminhao preto
 
@@ -14,3 +15,6 @@ var CAzul = 2;
 var avisao = CPreto + Ccast + CAzul;
 
 console.log(``);
+
+console.log("Olá, mundo!");
+
