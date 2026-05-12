@@ -457,4 +457,153 @@ input:hover {
             bottom: 37px;
         }
     }
+
+    /*===============================
+     FEATURED-PRODUCTS
+=================================*/
+    .featured-products-general {
+        margin: 1rem 0;
+        width: 100%;
+
+
+        .featured-text {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin: 0 1rem;
+
+            a {
+                text-decoration: none;
+                color: var(--primary);
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+            .featured-icone {
+                position: absolute;
+                top: -1px;
+            }
+        }
+
+        .featured-products {
+            margin: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+
+            .featured-card {
+                flex: 0 0 12.2rem;
+                border: 2px solid var(--border);
+                width: 30rem;
+                height: 20rem;
+                border-radius: 12px;
+                box-shadow: 0 0px 1px var(--shadow);
+                transition: 0.3s ease;
+                padding: 1rem;
+
+                h3 {
+                    color: var(--text-primary);
+                    margin-top: 2rem;
+                    display: flex;
+                    justify-content: space-between;
+
+                    button {
+                        border: none;
+                        border-radius: 50%;
+                        background: transparent;
+
+                        img {
+                            border-radius: 50%;
+                        }
+                    }
+
+                    img:hover {
+                        box-shadow: 0 0 10px rgba(25, 236, 18, 0.919);
+                    }
+
+                }
+
+                p {
+                    color: var(--text-light);
+                }
+            }
+
+            .featured-card:hover {
+                transform: translateY(-8px) scale(1.05);
+            }
+
+        }
+    }
+
+}
+
+/*===============================
+    FOOTER
+=================================*/
+footer {
+
+    margin: 1rem 3rem;
+
+    /*===============================
+     BENEFITS - 02
+=================================*/
+
+    .benefits-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #6d727c24;
+        width: 100%;
+        height: 7rem;
+        padding: .5rem;
+        border-radius: 20px;
+
+        .benefits-card-2 {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            width: 20rem;
+            height: 5rem;
+            cursor: pointer;
+            border-right: 2px solid var(--text-secondary);
+
+            img {
+                text-align: center;
+                align-items: center;
+            }
+
+            p {
+                margin-top: .5rem;
+                font-size: 13px;
+                color: var(--text-secondary);
+            }
+        }
+
+        .benefits-card-2:nth-child(4) {
+            border-right: none;
+        }
+
+        .benefits-card-2:hover {
+            background-color: #6d727c67;
+            border-radius: 8px;
+            transition: all 0.5s;
+        }
+    }
+
+    .newsletter {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-top: 1rem;
+        background-color: var(--primary-light);
+
+        img {
+            width: 200px;
+        }
+    }
+
+
+
 }
