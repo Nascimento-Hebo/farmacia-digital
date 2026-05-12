@@ -273,6 +273,7 @@ input:hover {
     }
 
     .hero-btn:hover {
+        transition: 0.4s ease;
         background-color: var(--primary-dark)
     }
 
@@ -323,6 +324,8 @@ input:hover {
         font-size: 10px;
     }
 
+
+
     .benefits-img {
         position: absolute;
         top: 80px;
@@ -330,6 +333,7 @@ input:hover {
         width: 24rem;
         height: 24rem;
     }
+
 
     .benefits-cross-img {
         position: absolute;
@@ -399,9 +403,10 @@ input:hover {
         }
 
         .promotions-cards:nth-child(1) {
-            color: var(--primary);
 
-            p {
+            a {
+                text-decoration: none;
+                color: var(--primary);
                 font-size: 14px;
                 font-weight: 400;
             }
@@ -419,7 +424,9 @@ input:hover {
                 line-height: 1.5rem;
             }
 
-            p {
+            a {
+                color: var(--info);
+                text-decoration: none;
                 font-size: 14px;
                 font-weight: 400;
             }
@@ -437,7 +444,8 @@ input:hover {
             line-height: 1.5rem;
         }
 
-        p {
+        a {
+            text-decoration: none;
             color: var(--primary);
             margin-top: .5rem;
             font-size: 14px;
@@ -446,7 +454,7 @@ input:hover {
 
         svg {
             position: absolute;
-            bottom: 33px;
+            bottom: 37px;
         }
     }
 }
