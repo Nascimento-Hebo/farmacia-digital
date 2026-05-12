@@ -23,7 +23,7 @@ nome = "Nascimento";
 sobrenome = "Hebo";
 nomeCompleto = nome + "   " + sobrenome;
 
-//alert(nomeCompleto)
+alert(nomeCompleto)
 
 
 
