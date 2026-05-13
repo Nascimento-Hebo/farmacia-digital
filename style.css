@@ -52,11 +52,19 @@ html{
 }
 
 body {
+    margin: auto;
+    min-width: 320px;
+    max-width: 1366px;
     font-family: "Inter", sans-serif;
     background-color: var(--background);
     min-height: 100dvh;
 }
-
+ header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #F8FAF9;
+ }
 /*===============================
         TOP BAR
 =================================*/
@@ -599,16 +607,100 @@ footer {
 
     .newsletter {
         display: flex;
-        justify-content: center;
-        align-content: center;
+        justify-content:center;
+        align-items: center;
+        gap: 1rem;
         margin-top: 1rem;
+        height: 10rem;
+        border-radius: 16px;
+        width: 100%;
         background-color: var(--primary-light);
 
+        .letter-news{
+            width: 26%;
+            margin-left: 1rem;
+            margin-right: 1rem;
+
+            h3{
+                color: var(--primary-dark);
+            }
+
+            p{
+                margin-top: 1rem;
+            }
+        }
+
         img {
+            margin-left: 2rem;
             width: 200px;
         }
     }
 
+    .form-register{
+        display: flex;
 
+        button{
+            color: var(--primary-lights);
+            border: none;
+            padding: .6rem 1rem;
+            border-radius: 12px;
+            background-color: var(--primary);
+        }
+    }
 
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 1.5rem;
+        margin-top: 1rem;
+        padding: 2rem;
+        border-radius: 16px;
+        background: var(--primary-light);
+
+        .general-log{
+            width: 14rem;
+
+            p{
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        h4{
+            margin-bottom: 1rem;
+            color: #1B1F1E;
+        }
+
+        p{
+            color: var(--text-secondary);
+        }
+    }
+
+    .footer-bottom{
+       width: 100%;
+       padding: 1rem;
+       margin-top: 1rem;
+       text-align: center;
+       align-items: center;
+       border-radius: 16px;
+       background: var(--primary-light);
+    }
+
+}
+
+@media (max-width:934px){
+    .top-bar{
+        display: none;
+    }
+}
+
+@media (max-width:500px){
+    .top-bar{
+        display: none;
+    }
+
+    .main-bar{
+        display: none;
+    }
 }
