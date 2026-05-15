@@ -53,7 +53,7 @@ html{
 
 body {
     margin: auto;
-    min-width: 320px;
+    min-width: 500px;
     max-width: 1366px;
     font-family: "Inter", sans-serif;
     background-color: var(--background);
@@ -689,18 +689,223 @@ footer {
 
 }
 
-@media (max-width:934px){
-    .top-bar{
-        display: none;
-    }
-}
 
-@media (max-width:500px){
+@media (max-width:768px){
+    body{
+        min-width: 90%;
+        margin: none;
+        padding: none;
+    }
     .top-bar{
         display: none;
     }
 
     .main-bar{
+        padding: 5px 5px;
+        align-items: center;
+    }
+
+    .main-bar1{
+    position: relative;
+    margin-top: 25px;
+    padding: 5px 2px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border); 
+}
+    .logo{
+        width: 100%;
+        margin-right: 2rem;
+    }
+
+    .search-bar{
+        position: relative;
+
+        input{
+        display: none;
+        }
+
+    .search-icone{
+        position: absolute;
+        top: -0.5rem;
+        width: 50px;
+    }
+
+    }
+
+    .register{
         display: none;
     }
+
+    .shopping-cart{
+        p{
+            display: none;
+        }
+    }
+
+    .nav-link{
+        display: none;
+    }
+
+         .hero-section{
+        margin: 1rem;
+        height: 230px;
+        position: relative;
+
+        .hero-content{
+            width: 50%;
+        }
+
+         .hero-title{
+            font-size: 1.5rem;
+            width: 100%;
+            margin: 2rem 1rem 1rem 1rem;
+         }
+
+          .hero-text{
+            width: 90%;
+            font-size: 1rem;
+            font-weight: 400;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+            margin: 1rem 1rem;
+          }
+
+          .hero-btn{
+            background-color: var(--primary);
+            padding: .5rem 1rem;
+            border-radius: 10px;
+            cursor: pointer;
+            border: none;
+            color: var(--primary-light);
+            font-size: 12px;
+            margin: 0 3rem 1rem 3rem;
+          }
+
+           .design {
+    
+           border-bottom-left-radius: 50px;  
+          }
+
+          .store-benefits{
+            background-color: transparent;
+          }
+          
+          .benefits{
+            display: none;
+          }
+
+          .benefits-img {
+            position: absolute;
+            top: 5rem;
+            right: 4rem;
+            width: 10rem;
+            height: 10rem;
+          }
+
+          .benefits-cross-img {
+             position: absolute;
+             top: 1rem;
+             right: -2rem;
+             width: 10rem;
+             margin-left: 30rem;
+           }
+         
+        } 
+        
+        /*===============================
+      HERO SECTION 2
+=================================*/
+
+        .hero-section2 {
+        width: 94%;    
+         margin: 1rem;
+        
+         .category-hero{
+            display: none;
+         }
+        
+         .promotions-cards{
+            display: flex;
+            justify-content: center;
+            flex-wrap: none;
+            width: 48% !important;
+            height: 6px;
+            padding: 10px;
+
+            img{
+             width: 80%;
+            }
+
+           .hero-text{
+            width: 50%;
+            line-height: 24px;
+            margin-left: 30px;
+            font-size: 14px;
+
+            h2{
+                font-size: 14px;
+                font-weight: bold;
+            }
+           }
+        }
+
+            .promotions-cards:nth-child(1){
+                svg{
+                position: absolute;
+                bottom: 50px !important;
+                }
+            }
+
+             .promotions-cards:nth-child(2){
+              svg{
+                position: absolute;
+                bottom: 37px !important;
+                }
+             }
+
+           
+            .promotions-cards:nth-child(3){
+            width: 100% !important;
+            height: 8rem;
+            margin-top: 1rem;
+
+            img{
+                width: 40%;
+            }
+            svg{
+                position: absolute;
+                bottom: 17px;
+            }
+           }
+
+
+           .featured-products-general{
+            overflow-x: auto;
+            a{
+                display: none;
+            }
+         
+           }
+
+           .featured-products-general::-webkit-scrollbar{
+            display: none;
+           }
+
+            .featured-products-general::-webkit-button(right){
+            content: '>';
+            background-color: var(--primary);
+            font-size: 3rem;
+            color: var(--border-light);
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            padding-bottom: 1rem;
+            }
+       
+        }
+
+        
+
+       
 }
